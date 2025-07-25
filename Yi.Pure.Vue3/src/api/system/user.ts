@@ -14,7 +14,7 @@ export const getUser = (userId: string) => {
 /** 删除用户 */
 export const delUser = (userIds: string[]) => {
   return http.request<Result>("delete", `/user`, {
-    params: { id: userIds }
+    params: { ids: userIds }
   });
 };
 
